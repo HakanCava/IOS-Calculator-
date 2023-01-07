@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 4rem);
@@ -19,12 +18,11 @@
   background-color: black;
   height: 100%;
   width: 350px;
-  justify-content:center;
+  justify-content: center;
   border-radius: 15px;
   margin: 1rem auto;
   padding-top: 180px;
   padding-bottom: 15px;
-
 }
 
 .content {
@@ -33,13 +31,22 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  background-color: var(--bc-dark);
+  font-size: 2rem;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.content:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
-.content1,
-.content2,
-.content3 {
-  background-color: var(--bc-light);
+.content17 {
+  grid-column: span 2;
+  border-radius: 35px;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
 }
 
 .content4,
@@ -49,48 +56,9 @@
   background-color: var(--bc-orange);
 }
 
-.content5,
-.content6,
-.content7,
-.content9,
-.content10,
-.content11,
-.content13,
-.content14,
-.content15,
-.content17,
-.content18,
-.content19 {
-  background-color: var(--bc-dark);
-  
-}
-
-button{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: white;
-}
-
-.zero {
-  grid-column: span 2;
- 
-}
-
-.content17{
-    border-radius: 35px;
-    text-align:left ;
-    padding-left: 1.5rem;
-}
-
-
-
-.content1,.content2,.content3{
-    color: black;
-}
-
-button:hover{
-    cursor: pointer;
-    opacity: 0.6;
+.content1,
+.content2,
+.content3 {
+  color: black;
+  background-color: var(--bc-light);
 }
